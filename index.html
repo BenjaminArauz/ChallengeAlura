@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__image" src="./images/logo_alura.png" alt="Alura logo">
+    </header>
+    <main class="encryptor">
+        <section class="entry">
+            <textarea name="text_message" id="text_message" class="input input__entry" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="entry__text">
+                <img class="entry__image" src="./images/icon_warning.png" alt="Lock icon">
+                Solo letras minusculas y sin acentos
+            </p>
+            <div class="container container__buttons">
+                <button onclick="showEncryption()" class="button primary--button">Encriptar</button>
+                <button onclick="showDecryption()" class="button secondary--button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="output">
+            <div>
+                <div class="container container__output">
+                    <img class="output__image" src="./images/kid.jpg" alt="No message was found">
+                    <p class="output__title">
+                        <strong>Ningún mensaje fue encontrado</strong>
+                    </p>
+                    <p class="output__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
